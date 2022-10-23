@@ -14,7 +14,7 @@ $('.key-search').on('click', function () {
 
             $('.btn-detail').on('click', function () {
                 $.ajax({
-                    url: 'http://www.omdbapi.com/?apikey=c334637&i=' + $(this).data('films'),
+                    url: 'https://www.omdbapi.com/?apikey=c334637&i=' + $(this).data('films'),
                     success: x => {
                         const Moviedetail = ShowMovieDetail(x);
                         $('.modal-body').html(Moviedetail);
