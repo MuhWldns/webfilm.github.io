@@ -1,6 +1,6 @@
 $('.key-search').on('click', function () {
     $.ajax({
-        url: 'http://www.omdbapi.com/?&apikey=c334637&s=' + $('.value-keyword').val(),
+        url: 'https://www.omdbapi.com/?&apikey=c334637&s=' + $('.value-keyword').val(),
         success: mhasil => {
             const movies = mhasil.Search
 
